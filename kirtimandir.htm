@@ -1,0 +1,164 @@
+<html>
+<head>
+<marquee><h1>KIRTI MANDIR</h1></marquee>
+<body style="background-image:url('bg1.jpg')">
+</head>
+<body>
+
+
+<p style="font-size:120%;">
+Kirti Mandir was Built in 1936 as a royal mausoleum of the Gaekwad dynasty, Kirti Mandir now stands as a glorious monument of Vadodara. The grand building, situated
+ in the heart of the city, was set up in the honor of Maharaja Sayajirao Gaekwad III's silver jubilee celebration. This E-shaped building features beautiful
+ elements like balconies, terraces, tombs, domes and a brilliantly carved 35 meters high central shikhara. Although it looks simple from the outside,
+ but the temple interiors showcases impressive pictures, murals by Nandalal Bose, based on themes like Gangavataran, Life of Meera, the battle of 
+Mahabharat and Natir Poojan and some rare paintings from the famous artist Raja Ravi Varma. No doubt, Gaekwad's were the heir to a tradition of
+ oriental refinement, a great patron of the arts, literature, philosophy and science, all these are best depicted through the exteriors and interiors of Kirti 
+Mandir.Also known as the Temple of Fame, it is situated near the picturesque Vishwamitra Bridge of the city, in the memory of deceased members of the royal Gaekwad family.
+The characteristic ‘sikhara’ of this statuesque monument represents the sun, the moon and the earth in bronze with the undivided map of India.
+ Inside Kirti Mandir, there are beautiful murals like the Mahabharat’s battle, Natir Pooja, Mirabai’s life, Gangavtaran done by the prominent Bengali artist – 
+Nandlal Bose. Also statues of previous Maharaja’s & Maharani’s can be seen. 
+</P>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="km1.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="km2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="km3.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="km4.jpg" style="width:100%">
+ </div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="km6.jpg" style="width:100%">
+ </div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="km5.jpg" style="width:100%">
+ </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<center>click here to return to <a href="homepage.htm">HOMEPAGE</a></center>
+

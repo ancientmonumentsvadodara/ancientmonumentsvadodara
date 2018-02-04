@@ -1,0 +1,163 @@
+<html>
+<head>
+<marquee><h1>CHAMPANER</h1></marquee>
+<body style="background-image:url('bg1.jpg')">
+
+<p style="font-size:120%;">
+Champaner is located at a distance of 50 km from Baroda and at the foothill of the Pavagadh hill in Gujarat. 
+Here you can find an old palace, fort, several mosques, but also walk the ancient streets just as its inhabitants did five centuries ago. 
+ Champaner was an out-of-the-way pilgrimage site for hundreds of years, became the capital of Gujarat, and was then abandoned to be overtaken by the jungle.
+ The city rose and fell almost as fast as the modern stock market, but left behind far more aesthetic remains.  The city is remarkably well-preserved, with Hindu and Jain
+ temples a thousand years old, mosques from the time of the Gujarat Sultanate, and the whole workings of a well-planned capital city still in evidence, from granaries and
+ fortifications to stepwells and cemeteries.  Champaner became a UNESCO World Heritage Site in 2004. <br>
+This site was once an important religious shrine and point of pilgrimage. The fort is ‘rediscovered’ by British surveyors in the 19th century, the history of this fort-city can be 
+traced back to the 8th century when it was ruled by King Vanraj Chavda. The name Champaner is said to have come from either the minister of the royal court Champa or from 
+the igneous rocks of the region that look similar to the Champaka flower.
+<br>
+The co-existence of Jain, Hindu, and Islamic places of worship makes Champaner unique. The most impressive structure to be found in this area is the Jami Masjid, inside the fort. 
+Elegant and well-preserved, the mosque has a confluence of Hindu and Islamic styles in its architecture. </p>
+<br>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="c1.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="c2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="c3.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="c4.jpg" style="width:100%">
+ </div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="c5.jpg" style="width:100%">
+ </div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="c6.jpg" style="width:100%">
+ </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<center>click here to return to <a href="homepage.htm">HOMEPAGE</a></center>

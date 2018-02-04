@@ -1,0 +1,161 @@
+<html>
+<head>
+<marquee><h1>LAXMI VILAS PALACE</h1></marquee>
+<body style="background-image:url('bg1.jpg')">
+
+<p style="font-size:120%;">
+Laxmi Vilas Palace is a lavish structure,built by Maharaja Sayajiroa Gaekwad III in 1890 and took nearly twelve years to complete, at a cost of  GBP 180,000.It is said to be largest private dwelling built till date and four times 
+the size of Buckingham Palace.The palace contains most mordern amenities such as elevators and the interior is reminiscent of a large European country house.The royal family still remains 
+to stay in the palace and continue to be held in high esteem by the residents of baroda.The Palace is sprawled over an area of 500 acres and is one of the largest palace ever built.This 500
+ acres palace compound includes the beautiful Navlakhi stepwell, Maharaja Fatehgrah museum, and a small zoo,which was resting ground crocodiles.Maharaja Fatehgarh museum exhibits
+ paintings by Raja Ravi Verma.The palace also has a Golf club and a club house that has facilities of Swimming pool ,Badminton Covered Court, Tennis court , Gym and a Verandah Café Lounge.
+
+
+
+<br>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="lvp1.jpg" style="width:100%">
+ </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="lvp2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="lvp3.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="lvp4.jpg" style="width:100%">
+ </div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="lvp6.jpg" style="width:100%">
+ </div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="lvp5.jpg" style="width:100%">
+ </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</p>
+<center>click here to return to <a href="homepage.htm">HOMEPAGE</a></center>
